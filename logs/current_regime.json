@@ -1,0 +1,16 @@
+{
+  "regime": "SIDEWAYS",
+  "confidence": 0.822,
+  "stability": 0.55,
+  "params": {
+    "confidence_threshold": 75,
+    "position_size_multiplier": 0.6,
+    "bias": "HOLD"
+  },
+  "cluster_returns": {
+    "BEAR": -0.0608,
+    "BULL": 0.0814,
+    "SIDEWAYS": -0.0608
+  },
+  "detected_at": "2026-04-14T17:13:47.462629+00:00"
+}

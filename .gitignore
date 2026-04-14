@@ -1,0 +1,47 @@
+# Secrets
+.env
+*.env
+TradingAgents/.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Logs (keep summary, ignore raw logs)
+logs/*.log
+logs/*.log.*.gz
+logs/*.jsonl
+logs/*.jsonl.*.gz
+logs/mirofish/
+logs/trades/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backups
+*.bak
+*.bak.*
+*.backup*
+*.broken_bak
+
+# Virtual env
+venv/
+.venv/
+env/
+
+# Results cache
+results/
+eval_results/

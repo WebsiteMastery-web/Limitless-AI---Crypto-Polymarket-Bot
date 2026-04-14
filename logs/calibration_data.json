@@ -1,0 +1,17 @@
+[
+  {
+    "raw_confidence": 75,
+    "outcome_binary": 1,
+    "source": "backtest"
+  },
+  {
+    "raw_confidence": 80,
+    "outcome_binary": 1,
+    "source": "backtest"
+  },
+  {
+    "raw_confidence": 70,
+    "outcome_binary": 0,
+    "source": "backtest"
+  }
+]

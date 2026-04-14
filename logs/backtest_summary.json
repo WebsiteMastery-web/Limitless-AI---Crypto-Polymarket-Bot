@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-04-14T19:41:42.381873+00:00",
+  "total_backtests": 6,
+  "actionable_signals": 1,
+  "wins": 1,
+  "losses": 0,
+  "win_rate": 1.0,
+  "avg_win_pct": 1.136,
+  "avg_loss_pct": 0.0,
+  "expectancy_per_trade": 1.136,
+  "avg_confidence_wins": 50.0,
+  "avg_confidence_losses": 0.0,
+  "confidence_predictive": true,
+  "date_range": "2026-03-17 to 2026-04-11",
+  "ready_for_saas": true
+}

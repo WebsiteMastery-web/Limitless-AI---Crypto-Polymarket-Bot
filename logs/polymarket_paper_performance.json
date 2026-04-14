@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-04-12T07:00:27.801166+00:00",
+  "total_positions": 177,
+  "resolved": 43,
+  "open": 134,
+  "wins": 20,
+  "losses": 23,
+  "win_rate": 0.4651,
+  "avg_edge_wins": 0.09,
+  "avg_edge_losses": 0.0939,
+  "high_confidence_win_rate": 0.3846,
+  "medium_confidence_win_rate": 0.5,
+  "best_call": {
+    "question": "Will Elon Musk post 240-259 tweets from March 31 to April 7, 2026?",
+    "edge": 0.12,
+    "outcome": "WIN"
+  },
+  "worst_call": {
+    "question": "Will the price of Bitcoin be above $68,000 on April 6?",
+    "edge": 0.12,
+    "outcome": "LOSS"
+  },
+  "ready_for_real_money": false
+}

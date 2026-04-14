@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-04-03T03:07:06.921738",
+  "checks": {
+    "MiroFish receiver": {
+      "passed": true,
+      "message": "MiroFish receiver responding on port 9876"
+    },
+    "Dashboard": {
+      "passed": true,
+      "message": "Dashboard responding on port 8888"
+    },
+    "Alpaca API": {
+      "passed": true,
+      "message": "Alpaca API credentials valid"
+    },
+    "OpenRouter API": {
+      "passed": true,
+      "message": "OpenRouter API responding"
+    },
+    "Knowledge base": {
+      "passed": false,
+      "message": "Missing/small: micro_context.md, risk_parameters.md, backtest_results.md, strategy_notes.md. Run: python3 update_knowledge_base.py --full"
+    },
+    "Crontab": {
+      "passed": true,
+      "message": "Cron entry for run_cron.sh found"
+    },
+    "Pipeline log": {
+      "passed": true,
+      "message": "Last pipeline run 3.0 hours ago"
+    },
+    "Disk space": {
+      "passed": true,
+      "message": "Free disk space: 28854MB"
+    }
+  }
+}

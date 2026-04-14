@@ -1,0 +1,27 @@
+--- a/update_knowledge_base.py
++++ b/update_knowledge_base.py
+@@ -843,15 +843,26 @@ def classify_post(title):
+     """Classify a post title as bullish, bearish, or neutral."""
+     words = set(title.lower().replace("-", " ").split())
+     b_hits = words & BULLISH_KW
+     be_hits = words & BEARISH_KW
+-    if b_hits and not be_hits:
+-        return "bullish", list(b_hits)
+-    elif be_hits and not b_hits:
+-        return "bearish", list(be_hits)
+-    elif b_hits and be_hits:
+-        return "mixed", []
++    
++    # Use substring matching for more robust detection
++    title_lower = title.lower()
++    bullish_kw = ["moon","pump","buy","bull","breakout","ath","hodl","accumulate","rally","green"]
++    bearish_kw = ["crash","dump","sell","bear","dead","rekt","capitulate","short","fear","drop"]
++    
++    b = sum(1 for k in bullish_kw if k in title_lower)
++    s = sum(1 for k in bearish_kw if k in title_lower)
++    
++    if b > s:
++        return "bullish", [k for k in bullish_kw if k in title_lower]
++    elif s > b:
++        return "bearish", [k for k in bearish_kw if k in title_lower]
+     return "neutral", []
