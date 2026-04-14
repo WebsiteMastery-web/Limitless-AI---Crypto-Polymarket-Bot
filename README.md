@@ -1,6 +1,6 @@
 # Limitless AI - Crypto and Polymarket Trading Bot
 
-An autonomous multi-agent AI trading system that analyzes BTC-USD and Polymarket using a 9-layer intelligence pipeline with debate-driven decision making.
+An autonomous multi-agent AI trading system that analyzes BTC-USD and Polymarket using a 12-layer intelligence pipeline with debate-driven decision making.
 
 > **Note:** I attempted to build the frontend dashboard with Claude, but it was not fully working in time, so I made a video walkthrough explaining how the system actually works end-to-end instead.
 ## Demo Video
@@ -10,17 +10,20 @@ An autonomous multi-agent AI trading system that analyzes BTC-USD and Polymarket
 
 ## How It Works
 
-The system runs a **9-layer intelligence pipeline** that feeds into a multi-agent debate framework:
+The system runs a **12-layer intelligence pipeline** that feeds into a multi-agent debate framework:
 
-1. **Price Data** - Real-time and historical BTC prices via Alpaca and yfinance
-2. **News Analysis** - Global crypto news from Tavily with sentiment scoring
-3. **Whale Tracking** - On-chain whale activity detection (distribution/accumulation)
-4. **Options Flow** - Put/Call ratio analysis for institutional positioning
-5. **Congressional/Insider Trades** - EDGAR filings for insider signals
-6. **Polymarket Signals** - Prediction market data for macro sentiment
-7. **Geopolitical Analysis** - GDELT-powered global event impact scoring
-8. **Knowledge Base** - Historical pattern memory for context
-9. **Regime Detection** - Market regime classification (trending/sideways/volatile)
+1. **L1: Live BTC Price and Market Data** - Real-time and historical prices via Alpaca and yfinance
+2. **L2: MiroFish** - 250 simulated retail agents modeling crowd sentiment
+3. **L3: Market Regime Detection** - Classification of trending/sideways/volatile regimes
+4. **L4: Elo-Weighted Confidence Scoring** - Dynamic agent credibility ranking
+5. **L5: GDELT Geopolitical News Signals** - Global event impact scoring from 100k+ sources
+6. **L6: Knowledge Graph Analysis** - Historical pattern memory and context retrieval
+7. **L7: Kronos** - Time-series pattern recognition and cycle detection
+8. **L8: Whale Wallet Movement Tracker** - On-chain whale accumulation/distribution signals
+9. **L9: Policy and Volatility Signals** - Macro policy impact and vol regime analysis
+10. **L10: TradingAgents Core Framework** - Multi-agent debate engine (Bull vs Bear vs Neutral)
+11. **L11: Confidence Calibration** - Statistical calibration of signal confidence scores
+12. **L12: Risk Management** - Position sizing, threshold gating, and regime-aware risk controls
 
 ### Multi-Agent Decision Engine
 
