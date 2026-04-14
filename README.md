@@ -5,7 +5,7 @@ An autonomous multi-agent AI trading system that analyzes BTC-USD and Polymarket
 > **Note:** I attempted to build the frontend dashboard with Claude, but it was not fully working in time, so I made a video walkthrough explaining how the system actually works end-to-end instead.
 ## Demo Video
 
-[Watch the full demo walkthrough on Google Drive](https://drive.google.com/drive/folders/1uchHZZa4rzH6sNApA472iEWG6IbqzWOY)
+[Watch the full demo walkthrough on Google Drive](https://drive.google.com/file/d/1byH7SimwmZnK0HX6FBaoMjsEHiA7W2x2/view?usp=sharing)
 
 
 ## How It Works
