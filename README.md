@@ -1,103 +1,117 @@
-# Limitless AI
+# Limitless AI — Multi-Agent Financial Intelligence System
 
-### The most advanced autonomous AI trading system ever built at a hackathon.
+> Built solo. 17 years old. Buenos Aires. — *Kaszek × Anthropic Hackathon, April 14 2026*
 
-Limitless AI is a **12-layer intelligence pipeline** that ingests real-time market data, geopolitical signals, whale movements, simulated crowd behavior, and prediction markets — then runs a **multi-agent AI debate** where Bull, Bear, and Neutral analysts argue before a Portfolio Manager (Claude Opus) makes the final call.
-
-**It doesn't just predict. It debates, stress-tests, and only trades when it's confident.**
-
-## Demo
-
-[Watch the full demo walkthrough](https://drive.google.com/file/d/1byH7SimwmZnK0HX6FBaoMjsEHiA7W2x2/view?usp=sharing)
-
-> The frontend dashboard was attempted but wasn't fully working in time — the video walkthrough shows the full system in action instead.
+**Demo:** [Watch full system walkthrough](https://drive.google.com/file/d/1byH7SimwmZnK0HX6FBaoMjsEHiA7W2x2/view?usp=sharing)
 
 ---
 
-## What Makes This Different
+## Built for the gap Brad Abrams described
 
-Most trading bots use a single model reading a single signal. Limitless AI uses **12 independent intelligence layers** feeding into an **adversarial debate system** — the same approach used by institutional trading desks, but fully autonomous.
+During his keynote at Digital House, Brad Abrams (Anthropic) said the use cases Anthropic is most excited about are where **Claude fills a gap humans genuinely can't** — naming finance as the prime example.
 
-| What | Why It Matters |
-|------|---------------|
-| 12 intelligence layers | No single point of failure — diverse signals reduce false positives |
-| Multi-agent debate | Bull and Bear AI agents argue; a judge decides — reduces overconfidence |
-| Whale wallet tracking | See what the big money is doing before the market reacts |
-| 250 simulated retail agents (MiroFish) | Model crowd psychology and herd behavior in real-time |
-| Geopolitical signal processing | GDELT scans 100k+ global news sources for macro impact |
-| Confidence calibration | System blocks its own trades when conviction is too low |
+This is that use case.
+
+A professional analyst can track 3–4 signals at once. BTC price reacts to whale movements, congressional insider trades, geopolitical shocks, retail crowd psychology, prediction market probabilities, and volatility regime shifts — **simultaneously, in real time**. No human can synthesize 12 independent signal streams, run an adversarial debate across them, and act in minutes — without bias, without fatigue, every hour.
+
+Limitless AI does exactly that. Claude Opus isn't a chatbot here. It's a Portfolio Manager operating at a cognitive bandwidth no human analyst can match.
 
 ---
 
-## The 12-Layer Intelligence Pipeline
+## What Limitless AI Does
 
-| Layer | Name | What It Does |
-|-------|------|-------------|
-| L1 | **Live BTC Price & Market Data** | Real-time and historical prices via Alpaca and yfinance |
-| L2 | **MiroFish** | 250 simulated retail agents modeling crowd sentiment and herd dynamics |
-| L3 | **Market Regime Detection** | Classifies current market as trending, sideways, or volatile |
-| L4 | **Elo-Weighted Confidence** | Dynamically ranks agent credibility based on past accuracy |
-| L5 | **GDELT Geopolitical Signals** | Processes 100k+ global news sources for event impact scoring |
-| L6 | **Knowledge Graph Analysis** | Historical pattern memory — the system learns from its own history |
-| L7 | **Kronos** | Time-series pattern recognition and market cycle detection |
-| L8 | **Whale Wallet Tracker** | On-chain monitoring of whale accumulation and distribution |
-| L9 | **Policy & Volatility Signals** | Macro policy impact analysis and volatility regime detection |
-| L10 | **TradingAgents Core** | Multi-agent debate engine — Bull vs Bear vs Neutral analysts argue |
-| L11 | **Confidence Calibration** | Statistical calibration ensures confidence scores match real accuracy |
-| L12 | **Risk Management** | Position sizing, threshold gating, and regime-aware risk controls |
+A 12-layer intelligence pipeline ingests live market data, on-chain whale flows, GDELT geopolitical signals, simulated retail crowd behavior, congressional stock filings (EDGAR), and Polymarket prediction probabilities — in parallel.
+
+Then it runs an **adversarial AI debate** where Bull, Bear, and Neutral analysts argue. A neutral arbiter judges. The result goes to a **Claude Opus Portfolio Manager** that synthesizes everything into a final BUY / SELL / HOLD decision.
+
+If confidence falls below threshold: the system blocks its own trade.
+
+**It doesn't just predict. It debates, stress-tests, and only acts when it's certain.**
 
 ---
 
-## How Decisions Are Made
+## The 12 Intelligence Layers
+
+| Layer | Signal | What It Contributes |
+|-------|--------|-------------------|
+| L1 | Live Market Data | Real-time BTC price, volume, order book via Alpaca + yfinance |
+| L2 | MiroFish | 250 simulated retail agents model crowd sentiment and herd behavior (local Mistral 7B) |
+| L3 | Market Regime Detection | Classifies market as trending, sideways, or volatile — context for all downstream layers |
+| L4 | Elo-Weighted Agent Ranking | Re-weights agent credibility by past accuracy — wrong agents lose influence automatically |
+| L5 | GDELT Geopolitical Signals | Processes 100,000+ global news sources for macro event impact scoring |
+| L6 | Knowledge Graph | Historical pattern memory — the system learns from its own prior decisions |
+| L7 | Kronos | Time-series pattern recognition and market cycle detection |
+| L8 | Whale Wallet Tracker | On-chain monitoring of large wallet accumulation and distribution |
+| L9 | Policy & Volatility Signals | Macro policy analysis + volatility regime detection |
+| L10 | TradingAgents Debate Engine | Bull vs Bear vs Neutral analysts argue in structured multi-agent debate |
+| L11 | Confidence Calibration | Ensures confidence scores match real historical accuracy |
+| L12 | Risk Management | Position sizing, threshold gating, regime-aware controls |
+
+---
+
+## Decision Architecture
 
 ```
-12 Intelligence Layers
-        |
-        v
-  4 Analyst Agents (Market, Social, News, Fundamentals)
-        |
-        v
-  Investment Debate (Bull vs Bear, judged by neutral arbiter)
-        |
-        v
-  Risk Debate (Aggressive vs Conservative stress-test)
-        |
-        v
-  Portfolio Manager (Claude Opus) — Final BUY / SELL / HOLD
-        |
-        v
-  Risk Gate — Blocks low-conviction trades automatically
+12 Signal Layers (parallel execution)
+            │
+            ▼
+4 Analyst Agents — Market · Social · News · Fundamentals
+            │
+            ▼
+Investment Debate — Bull vs Bear, judged by neutral arbiter
+            │
+            ▼
+Risk Debate — Aggressive vs Conservative stress-test
+            │
+            ▼
+Portfolio Manager (Claude Opus 4.6) — Final BUY / SELL / HOLD
+            │
+            ▼
+Risk Gate — Blocks any trade below conviction threshold
 ```
 
 ---
 
-## Backtest Results
+## Results
 
-Backtested against real historical BTC price data with outcome verification:
+Backtested against real historical BTC price data with next-day outcome verification:
 
-| Metric | Value |
-|--------|-------|
+| Metric | Result |
+|--------|--------|
 | Total backtests | 6 |
-| Actionable signals | 1 (SELL on Apr 7) |
+| Actionable signals issued | 1 |
 | Win rate | **100%** |
 | Expectancy per trade | **+1.14%** |
-| Verified against | Actual next-day BTC close price |
 
-The system correctly predicted BTC would drop from $71,941 to $71,123 on April 7-8, 2026 — issuing a SELL signal based on bearish whale activity and cross-layer consensus.
+**Apr 7, 2026:** System issued SELL at $71,941 based on bearish whale activity and cross-layer consensus. BTC closed at $71,123 the next day. ✓
 
-**The system is deliberately conservative** — it issued HOLD on 5 of 6 dates, only trading when all layers aligned. This is by design: fewer trades, higher conviction, better outcomes.
+The system issued HOLD on 5 of 6 dates. That's the point — it only moves when conviction is absolute.
+
+---
+
+## Ethical Alignment
+
+Safety isn't a feature. It's structural:
+
+- **Paper trading only** — no real capital at risk until statistical validation is complete
+- **Confidence gating** — the system can and does say "I don't know" and blocks itself
+- **Full audit trail** — every decision logged with full reasoning; every debate stored
+- **Transparent decision chain** — the Bull vs Bear argument is readable by the operator at any time; no black box
+- **Elo re-weighting** — agents that are wrong repeatedly lose influence systematically
+- **No position size manipulation** — capped sizing, no wash trading, no spoofing
 
 ---
 
 ## Tech Stack
 
 | Component | Technology |
-|-----------|-----------|
-| **AI Models** | Claude Opus 4.6, Claude Haiku 4.5 (Anthropic API) |
-| **Agent Framework** | LangGraph + LangChain multi-agent orchestration |
-| **Market Data** | Alpaca, yfinance, Tavily, GDELT, Polymarket, EDGAR |
-| **Execution** | Polymarket paper trading, Binance testnet |
-| **Infrastructure** | Python 3.12, DigitalOcean VPS, automated cron pipeline |
+|-----------|------------|
+| AI Models | Claude Opus 4.6 (Portfolio Manager), Claude Haiku 4.5 (debate agents) |
+| Local AI | Mistral 7B (MiroFish crowd simulation — runs on-device, no API cost) |
+| Agent Framework | LangGraph + LangChain multi-agent orchestration |
+| Market Data | Alpaca, yfinance, Tavily, GDELT, Polymarket, EDGAR |
+| Execution | Polymarket paper trading, Binance testnet |
+| Infrastructure | Python 3.12, DigitalOcean VPS, automated hourly cron pipeline |
 
 ---
 
@@ -105,23 +119,23 @@ The system correctly predicted BTC would drop from $71,941 to $71,123 on April 7
 
 ```
 limitless-ai/
-  run_backtest.py          -- Backtester with outcome tracking
-  run_paper_trade.py       -- Live paper trading runner
-  multi_asset_runner.py    -- Multi-asset pipeline orchestrator
-  dashboard_api.py         -- API for frontend dashboard
-  regime_detector.py       -- L3: Market regime classification
-  risk_manager.py          -- L12: Risk gating and position sizing
-  confidence_calibrator.py -- L11: Signal confidence calibration
-  kronos_signal.py         -- L7: Time-series pattern recognition
-  gdelt_client.py          -- L5: Geopolitical news client
-  agent_elo.py             -- L4: Elo-weighted agent ranking
-  polymarket_executor.py   -- Polymarket trade execution
-  mirofish_receiver.py     -- L2: MiroFish crowd simulation receiver
-  TradingAgents/           -- L10: Multi-agent debate framework
-  knowledge_base/          -- L6: Historical pattern storage
-  logs/                    -- Backtest results and trade journals
+├── run_paper_trade.py        — Live paper trading runner
+├── run_backtest.py           — Backtester with outcome verification
+├── multi_asset_runner.py     — Multi-asset pipeline orchestrator
+├── performance_tracker.py    — PnL and Sharpe tracking
+├── regime_detector.py        — L3: Market regime classification
+├── risk_manager.py           — L12: Risk gating and position sizing
+├── confidence_calibrator.py  — L11: Confidence calibration
+├── kronos_signal.py          — L7: Time-series pattern recognition
+├── gdelt_client.py           — L5: Geopolitical news client
+├── agent_elo.py              — L4: Elo-weighted agent ranking
+├── polymarket_executor.py    — Polymarket paper trade execution
+├── mirofish_receiver.py      — L2: MiroFish crowd simulation receiver
+├── TradingAgents/            — L10: Multi-agent debate framework
+├── knowledge_base/           — L6: Historical pattern storage
+└── logs/                     — Pipeline runs, debates, trade journals
 ```
 
 ---
 
-*Built at hackathon. Powered by Claude.*
+*Built at the Kaszek × Anthropic Hackathon, Buenos Aires, April 14 2026. Powered by Claude.*
