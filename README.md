@@ -74,18 +74,18 @@ Risk Gate — Blocks any trade below conviction threshold
 
 ## Results
 
-Backtested against real historical BTC price data with next-day outcome verification:
+Backtested against real historical BTC-USD price data (Mar 17 – Apr 11, 2026) with next-day outcome verification:
 
 | Metric | Result |
 |--------|--------|
-| Total backtests | 6 |
-| Actionable signals issued | 1 |
-| Win rate | **100%** |
-| Expectancy per trade | **+1.14%** |
+| Historical dates analyzed | 6 |
+| Trade signals issued | 1 |
+| That signal correct | **Yes (+1.14%)** |
+| Dates where system held | 5 of 6 |
 
 **Apr 7, 2026:** System issued SELL at $71,941 based on bearish whale activity and cross-layer consensus. BTC closed at $71,123 the next day. ✓
 
-The system issued HOLD on 5 of 6 dates. That's the point — it only moves when conviction is absolute.
+5 of 6 dates returned HOLD. That's the design — the system only acts when every layer agrees. It would rather miss a move than make a wrong one.
 
 ---
 
