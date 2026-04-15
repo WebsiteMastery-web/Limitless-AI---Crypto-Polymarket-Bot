@@ -2,7 +2,7 @@
 
 > Built solo. 17 years old. Buenos Aires. — *Kaszek × Anthropic Hackathon, April 14 2026*
 
-**Demo:** [Watch full system walkthrough](https://drive.google.com/file/d/1byH7SimwmZnK0HX6FBaoMjsEHiA7W2x2/view?usp=sharing)
+**Demo:** [Watch full system walkthrough](https://drive.google.com/file/d/13sw1gMmuhaQacb0x5H5czqsOwcN0bu2D/view?usp=sharing)
 
 ---
 
